@@ -4,11 +4,6 @@ import { sleep } from "k6";
 // リクエスト回数
 let requestCount = 1;
 
-export const options = {
-  vus: 2,
-  duration: "10s",
-};
-
 export default function () {
   const postData = {
     name: `ユーザー${requestCount}`,
